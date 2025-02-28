@@ -2,7 +2,7 @@ package entities;
 
 public class BanckAccounts {
 	
-	private int accountNumber;
+	private String accountNumber;
 	private String accountName;
 	private double accountBalance;
 	
@@ -10,20 +10,20 @@ public class BanckAccounts {
 		
 	}
 	
-	public BanckAccounts(int accountNumber, String accountName, double accountBalance) {
+	public BanckAccounts(String accountNumber, String accountName, double accountBalance) {
 		super();
 		this.accountNumber = accountNumber;
 		this.accountName = accountName;
 		this.accountBalance = accountBalance;
 	}
 	
-	public BanckAccounts(int accountNumber, String accountName) {
+	public BanckAccounts(String accountNumber, String accountName) {
 		super();
 		this.accountNumber = accountNumber;
 		this.accountName = accountName;
 	}
 
-	public int getAccountNumber() {
+	public String getAccountNumber() {
 		return accountNumber;
 	}
 
